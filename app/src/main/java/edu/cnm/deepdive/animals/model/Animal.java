@@ -41,3 +41,5 @@ public class Animal {
     this.imageUrl = imageUrl;
   }
 }
+
+
