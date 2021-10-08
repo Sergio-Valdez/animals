@@ -8,9 +8,10 @@ public class AnimalsApplication extends Application {
   @Override
   public void onCreate() {
     super.onCreate();
-    Picasso.setSingletonInstance();
+    Picasso.setSingletonInstance(
       new Picasso.Builder(this)
-          .loggingEnabled(BuildConfig.DEBUG);
+          .loggingEnabled(BuildConfig.DEBUG)
+          .build()
+    );
   }
-
 }
